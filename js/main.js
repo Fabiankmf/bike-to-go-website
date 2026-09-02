@@ -1,12 +1,52 @@
-/**
- * bike to go - Main JavaScript
- * Handles navigation, mobile menu, live chat widget, and placeholder interactions.
- */
+import translations from './translations.js';
 
+/**
+ * Apply translations for the given language code.
+ * Updates all elements with a data-i18n attribute.
+ */
+function applyTranslations(lang) {
+  const dict = translations[lang] || {};
+  // Update elements with data-i18n
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key]) {
+      // Use innerHTML to preserve HTML tags in translation strings
+      el.innerHTML = dict[key];
+    }
+  });
+  // Update <title>
+  const titleEl = document.querySelector('title[data-i18n]');
+  if (titleEl && dict[titleEl.getAttribute('data-i18n')]) {
+    document.title = dict[titleEl.getAttribute('data-i18n')];
+  }
+  // Update meta description
+  const metaDesc = document.querySelector('meta[name="description"][data-i18n]');
+  if (metaDesc && dict[metaDesc.getAttribute('data-i18n')]) {
+    metaDesc.setAttribute('content', dict[metaDesc.getAttribute('data-i18n')]);
+  }
+}
+
+// Initialize language from localStorage or default to German
 document.addEventListener('DOMContentLoaded', () => {
+  const storedLang = localStorage.getItem('lang') || 'de';
+  const langSelect = document.getElementById('langSelect');
+  if (langSelect) {
+    langSelect.value = storedLang;
+    langSelect.addEventListener('change', (e) => {
+      const newLang = e.target.value;
+      localStorage.setItem('lang', newLang);
+      applyTranslations(newLang);
+    });
+  }
+  applyTranslations(storedLang);
+
   // --------------------------------------------------------------------------
   // 1. Mobile Menu Navigation
   // --------------------------------------------------------------------------
+  const mobileToggle = document.getElementById('mobileToggle');
+  const mainNav = document.getElementById('mainNav');
+  const navLinks = document.querySelectorAll('.nav-link');
+
   const mobileToggle = document.getElementById('mobileToggle');
   const mainNav = document.getElementById('mainNav');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -21,7 +61,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close menu when a link is clicked
     navLinks.forEach(link => {
-      link.addEventListener('click', () => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        // If it's a hash link, prevent default and smooth scroll
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+        // Close mobile menu if open
         if (mainNav.classList.contains('open')) {
           mobileToggle.setAttribute('aria-expanded', 'false');
           mobileToggle.classList.remove('active');
@@ -254,7 +304,38 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 5. Toast Notification for Placeholder Elements
+  // 5. Contact Form Handling (kontakt.html)
+  // --------------------------------------------------------------------------
+  const contactForm = document.getElementById('contactForm');
+  const formSuccessBanner = document.getElementById('formSuccessBanner');
+  const successUserName = document.getElementById('successUserName');
+
+  if (contactForm && formSuccessBanner) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('contactName');
+      const name = nameInput ? nameInput.value.trim() : '';
+
+      // Personalized greeting in success banner
+      if (successUserName) {
+        successUserName.textContent = name ? `, ${name}` : '';
+      }
+
+      // Show confirmation banner
+      formSuccessBanner.classList.add('show');
+      formSuccessBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      // Reset form fields
+      contactForm.reset();
+
+      // Show toast notification
+      showToast('✅ Danke für deine Nachricht! Wir melden uns innerhalb von 24 Stunden.');
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // 6. Toast Notification for Placeholder Elements
   // --------------------------------------------------------------------------
   const toast = document.getElementById('toastNotice');
   const toastText = document.getElementById('toastText');
@@ -268,16 +349,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (toastTimer) clearTimeout(toastTimer);
     toastTimer = setTimeout(() => {
       toast.classList.remove('show');
-    }, 3200);
+    }, 3500);
   }
 
   // Attach placeholder handlers
   document.querySelectorAll('[data-placeholder]').forEach(el => {
-    el.addEventListener('click', (e) => {
+  el.addEventListener('click', (e) => {
+    const href = el.getAttribute('href');
+    // Only prevent navigation for hash anchors (smooth scroll placeholders)
+    if (href && href.startsWith('#')) {
       e.preventDefault();
-      const featureName = el.getAttribute('data-placeholder') || 'Diese Funktion';
-      showToast(`ℹ️ ${featureName} wird im nächsten Schritt freigeschaltet.`);
-    });
+    }
+    const featureName = el.getAttribute('data-placeholder') || 'Diese Funktion';
+    showToast(`ℹ️ ${featureName} wird im nächsten Schritt freigeschaltet.`);
   });
 });
+});
+
 

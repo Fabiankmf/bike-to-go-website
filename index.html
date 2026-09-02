@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="bike to go - Dein Partner für deutschlandweites Fahrrad- und E-Bike-Leasing für Arbeitgeber, Arbeitnehmer und Selbständige. Überall. Flexibel. Unterwegs.">
-  <title>bike to go | Deutschlandweites Fahrradleasing</title>
+  <meta name="description" data-i18n="seo.description" content="bike to go - Dein Partner für deutschlandweites Fahrrad- und E-Bike-Leasing für Arbeitgeber, Arbeitnehmer und Selbständige. Überall. Flexibel. Unterwegs.">
+  <title data-i18n="seo.title">bike to go | Deutschlandweites Fahrradleasing</title>
   
   <!-- Google Fonts: Plus Jakarta Sans for modern typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <!-- Logo "bike to go" -->
-      <a href="#" class="logo" aria-label="bike to go - Zur Startseite">
+      <a href="index.html" class="logo" aria-label="bike to go - Zur Startseite">
         <div class="logo-icon">
           <!-- Bicycle SVG Icon -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -40,30 +40,24 @@
 
       <!-- Desktop & Mobile Navigation Links -->
       <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
-        <ul class="nav-list">
-          <li><a href="#arbeitgeber" class="nav-link">Arbeitgeber</a></li>
-          <li><a href="#arbeitnehmer" class="nav-link">Arbeitnehmer</a></li>
-          <li><a href="#selbstaendige" class="nav-link">Selbständige</a></li>
-          <li><a href="#fahrradhaendler" class="nav-link">Fahrradhändler</a></li>
-          <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
-        </ul>
+          <ul class="nav-list">
+            <li><a href="arbeitgeber.html" class="nav-link" data-i18n="nav.arbeitgeber">Arbeitgeber</a></li>
+            <li><a href="arbeitnehmer.html" class="nav-link" data-i18n="nav.arbeitnehmer">Arbeitnehmer</a></li>
+            <li><a href="selbstaendige.html" class="nav-link" data-i18n="nav.selbstaendige">Selbständige</a></li>
+            <li><a href="fahrradhaendler.html" class="nav-link" data-i18n="nav.fahrradhaendler">Fahrradhändler</a></li>
+            <li><a href="kontakt.html" class="nav-link" data-i18n="nav.kontakt">Kontakt</a></li>
+          </ul>
       </nav>
 
       <!-- Right Header Actions: Language & Login -->
       <div class="header-actions">
-        <!-- Language Selector (DE) -->
+        <!-- Language Selector -->
         <div class="lang-selector">
-          <button class="lang-btn" data-placeholder="Sprachauswahl" aria-label="Sprache wählen: Deutsch">
-            <svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true">
-              <path fill="#ffce00" d="M0 320h640v160H0z"/>
-              <path fill="#000" d="M0 0h640v160H0z"/>
-              <path fill="#d00" d="M0 160h640v160H0z"/>
-            </svg>
-            <span>DE</span>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m6 9 6 6 6-6"/>
-            </svg>
-          </button>
+          <select id="langSelect" aria-label="Sprache wählen">
+            <option value="de">🇩🇪 DE</option>
+            <option value="en">🇬🇧 EN</option>
+            <option value="es">🇪🇸 ES</option>
+          </select>
         </div>
 
         <!-- Login Button -->
@@ -98,19 +92,19 @@
             <span>Deutschlandweites Dienstrad-Leasing</span>
           </div>
 
-          <h1 class="hero-title">
+          <h1 class="hero-title" data-i18n="hero.title">
             Überall. Flexibel.<br>
             <span class="text-gradient">Unterwegs.</span>
           </h1>
 
-          <p class="hero-subtitle">
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
             Entdecke das unkomplizierte Fahrrad- und E-Bike-Leasing für Unternehmen, Angestellte und Selbstständige. Fahre dein Traumbike mit bis zu 40% Ersparnis gegenüber dem Neukauf.
           </p>
 
           <!-- Two Buttons/Cards below Slogan -->
           <div class="hero-actions">
             <!-- Button 1: Leasingrechner -->
-            <a href="#leasingrechner" class="btn-card btn-card-primary" id="heroCalcBtn">
+            <a href="#leasingrechner" class="btn-card btn-card-primary" id="heroCalcBtn" data-i18n="hero.cta.primary">
               <div class="btn-card-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                   <rect width="16" height="20" x="4" y="2" rx="2"/>
@@ -132,7 +126,7 @@
             </a>
 
             <!-- Button 2: Weitere Benefits und Pakete -->
-            <a href="#benefits" class="btn-card btn-card-secondary" data-placeholder="Die Benefit- & Paketübersicht">
+            <a href="#benefits" class="btn-card btn-card-secondary" data-i18n="hero.cta.secondary" data-placeholder="Die Benefit- & Paketübersicht">
               <div class="btn-card-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 2v20"/>
@@ -621,7 +615,7 @@
       <div class="footer-grid">
         <!-- Brand Info -->
         <div class="footer-brand">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <div class="logo-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="18.5" cy="17.5" r="3.5"/>
@@ -641,10 +635,10 @@
         <div>
           <h4 class="footer-title">Zielgruppen</h4>
           <ul class="footer-links">
-            <li><a href="#arbeitgeber" data-placeholder="Bereich Arbeitgeber">Für Arbeitgeber</a></li>
-            <li><a href="#arbeitnehmer" data-placeholder="Bereich Arbeitnehmer">Für Arbeitnehmer</a></li>
-            <li><a href="#selbstaendige" data-placeholder="Bereich Selbständige">Für Selbständige</a></li>
-            <li><a href="#fachhaendler" data-placeholder="Bereich Fachhändler">Für Fahrradhändler</a></li>
+            <li><a href="arbeitgeber.html">Für Arbeitgeber</a></li>
+            <li><a href="arbeitnehmer.html">Für Arbeitnehmer</a></li>
+            <li><a href="selbstaendige.html">Für Selbständige</a></li>
+            <li><a href="fahrradhaendler.html">Für Fahrradhändler</a></li>
           </ul>
         </div>
 
@@ -690,6 +684,6 @@
   </div>
 
   <!-- Main JavaScript File -->
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
