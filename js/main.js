@@ -362,6 +362,23 @@ document.addEventListener('DOMContentLoaded', () => {
     showToast(`ℹ️ ${featureName} wird im nächsten Schritt freigeschaltet.`);
   });
 });
+
+    // -------- Header login status --------
+    const loginBtn = document.querySelector('.btn-login');
+    const loggedUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    if (loginBtn) {
+      if (loggedUser && loggedUser.name) {
+        loginBtn.textContent = `Eingeloggt als ${loggedUser.name}`;
+        loginBtn.removeAttribute('href');
+        loginBtn.style.cursor = 'pointer';
+        loginBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          localStorage.removeItem('loggedInUser');
+          location.reload();
+        });
+      }
+    }
+
 });
 
 

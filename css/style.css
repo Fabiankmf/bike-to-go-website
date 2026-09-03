@@ -2499,3 +2499,110 @@ a.info-item-val:hover {
     justify-content: center;
   }
 }
+
+/* --------------------------------------------------------------------------
+   99. Login / Registration Card Styles
+   -------------------------------------------------------------------------- */
+
+/* Card container */
+.card {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  max-width: 420px;
+  margin: 2rem auto;
+}
+
+/* Tabs navigation */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.tab.active {
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary);
+}
+
+/* Tab content wrappers */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Form layout inside card */
+.tab-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tab-content label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.tab-content input[type="email"],
+.tab-content input[type="password"],
+.tab-content input[type="text"] {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  font-family: inherit;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.tab-content input[type="email"]:focus,
+.tab-content input[type="password"]:focus,
+.tab-content input[type="text"]:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-glow);
+}
+
+/* Primary button for forms */
+.btn-primary {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+/* Ensure the login button in header still works */
+.btn-login {
+  min-width: 120px;
+}
+
+/* End of login card styles */
