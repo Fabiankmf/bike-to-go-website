@@ -15,15 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const loginTab = document.getElementById('loginTab');
   const registerTab = document.getElementById('registerTab');
   const switchTab = (target) => {
-    tabs.forEach(t => t.classList.toggle('active', t.dataset.tab === target));
-    if (target === 'login') {
-      loginTab.style.display = '';
-      registerTab.style.display = 'none';
-    } else {
-      loginTab.style.display = 'none';
-      registerTab.style.display = '';
-    }
-  };
+  tabs.forEach(t => t.classList.toggle('active', t.dataset.tab === target));
+  loginTab.classList.toggle('active', target === 'login');
+  registerTab.classList.toggle('active', target === 'register');
+};;
   tabs.forEach(tab => {
     tab.addEventListener('click', () => switchTab(tab.dataset.tab));
   });
