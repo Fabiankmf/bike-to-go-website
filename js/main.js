@@ -47,9 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainNav = document.getElementById('mainNav');
   const navLinks = document.querySelectorAll('.nav-link');
 
-  const mobileToggle = document.getElementById('mobileToggle');
-  const mainNav = document.getElementById('mainNav');
-  const navLinks = document.querySelectorAll('.nav-link');
+
 
   if (mobileToggle && mainNav) {
     mobileToggle.addEventListener('click', () => {
