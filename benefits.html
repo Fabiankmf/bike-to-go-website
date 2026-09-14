@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="benefits.title">Bike to Go – Benefits & Leasing‑Pakete</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION (copied from index.html) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="bike to go - Zur Startseite">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18.5" cy="17.5" r="3.5"/>
+            <circle cx="5.5" cy="17.5" r="3.5"/>
+            <circle cx="15" cy="5" r="1"/>
+            <path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
+          </svg>
+        </div>
+        <span class="logo-text">bike<span class="highlight">to</span>go</span>
+        <span class="logo-badge">Deutschlandweit</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+        <ul class="nav-list">
+          <li><a href="arbeitgeber.html" class="nav-link" data-i18n="nav.arbeitgeber">Arbeitgeber</a></li>
+          <li><a href="arbeitnehmer.html" class="nav-link" data-i18n="nav.arbeitnehmer">Arbeitnehmer</a></li>
+          <li><a href="selbstaendige.html" class="nav-link" data-i18n="nav.selbstaendige">Selbständige</a></li>
+          <li><a href="fahrradhaendler.html" class="nav-link" data-i18n="nav.fahrradhaendler">Fahrradhändler</a></li>
+          <li><a href="kontakt.html" class="nav-link" data-i18n="nav.kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-selector">
+          <select id="langSelect" aria-label="Sprache wählen">
+            <option value="de">🇩🇪 DE</option>
+            <option value="en">🇬🇧 EN</option>
+            <option value="es">🇪🇸 ES</option>
+          </select>
+        </div>
+        <a href="login.html" class="btn-login" aria-label="Login zum Portal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <span class="btn-text-full" data-i18n="header.login">Login</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="hero-title" data-i18n="benefits.hero.title">Mehr als nur ein Fahrrad</h1>
+      <p class="hero-subtitle" data-i18n="benefits.hero.subtitle">Wähle das passende Leasing‑Paket und profitiere von erstklassigem Service und Zubehör.</p>
+    </div>
+  </section>
+
+  <!-- LEASING PACKAGES -->
+  <section class="benefits-packages">
+    <div class="container">
+      <h2 data-i18n="benefits.packages.title">Unsere Leasing‑Pakete</h2>
+      <div class="grid packages-grid">
+        <!-- Basic -->
+        <div class="card package-card">
+          <h3 data-i18n="benefits.packages.basic.title">Basic</h3>
+          <ul>
+            <li data-i18n="benefits.packages.basic.item1">Grundversicherung</li>
+            <li data-i18n="benefits.packages.basic.item2">Standardservice</li>
+            <li data-i18n="benefits.packages.basic.item3">12–36 Monate Laufzeit</li>
+          </ul>
+          <a href="kontakt.html" class="btn-primary" data-i18n="benefits.packages.cta">Jetzt anfragen</a>
+        </div>
+        <!-- Comfort (highlighted) -->
+        <div class="card package-card most-popular">
+          <h3 data-i18n="benefits.packages.comfort.title">Comfort</h3>
+          <p class="badge" data-i18n="benefits.packages.comfort.badge">Beliebteste Wahl</p>
+          <ul>
+            <li data-i18n="benefits.packages.comfort.item1">Vollkaskoversicherung</li>
+            <li data-i18n="benefits.packages.comfort.item2">Diebstahlschutz</li>
+            <li data-i18n="benefits.packages.comfort.item3">Kostenloser Inspektionsservice</li>
+            <li data-i18n="benefits.packages.comfort.item4">12–36 Monate Laufzeit</li>
+          </ul>
+          <a href="kontakt.html" class="btn-primary" data-i18n="benefits.packages.cta">Jetzt anfragen</a>
+        </div>
+        <!-- Premium -->
+        <div class="card package-card">
+          <h3 data-i18n="benefits.packages.premium.title">Premium</h3>
+          <ul>
+            <li data-i18n="benefits.packages.premium.item1">Alles aus Comfort</li>
+            <li data-i18n="benefits.packages.premium.item2">Ersatzrad bei Reparatur</li>
+            <li data-i18n="benefits.packages.premium.item3">Pannenhilfe deutschlandweit</li>
+            <li data-i18n="benefits.packages.premium.item4">12–36 Monate Laufzeit</li>
+          </ul>
+          <a href="kontakt.html" class="btn-primary" data-i18n="benefits.packages.cta">Jetzt anfragen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESSORIES & EXTRAS -->
+  <section class="extras-section">
+    <div class="container">
+      <h2 data-i18n="benefits.extras.title">Zubehör & Extras</h2>
+      <div class="grid extras-grid">
+        <div class="card extra-card">
+          <h4 data-i18n="benefits.extras.helm.title">Helm‑Leasing</h4>
+          <p data-i18n="benefits.extras.helm.desc">Ab 5 €/Monat</p>
+        </div>
+        <div class="card extra-card">
+          <h4 data-i18n="benefits.extras.schloss.title">Fahrradschloss</h4>
+          <p data-i18n="benefits.extras.schloss.desc">Ab 3 €/Monat</p>
+        </div>
+        <div class="card extra-card">
+          <h4 data-i18n="benefits.extras.kindersitz.title">Kindersitz</h4>
+          <p data-i18n="benefits.extras.kindersitz.desc">Ab 4 €/Monat</p>
+        </div>
+        <div class="card extra-card">
+          <h4 data-i18n="benefits.extras.anhanger.title">Anhänger</h4>
+          <p data-i18n="benefits.extras.anhanger.desc">Ab 6 €/Monat</p>
+        </div>
+        <div class="card extra-card">
+          <h4 data-i18n="benefits.extras.ladestation.title">E‑Bike‑Ladestation</h4>
+          <p data-i18n="benefits.extras.ladestation.desc">Ab 8 €/Monat</p>
+        </div>
+        <div class="card extra-card">
+          <h4 data-i18n="benefits.extras.regen.title">Regenbekleidung</h4>
+          <p data-i18n="benefits.extras.regen.desc">Ab 2 €/Monat</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 data-i18n="benefits.faq.title">Häufige Fragen</h2>
+      <div class="faq">
+        <details>
+          <summary data-i18n="benefits.faq.q1">Wie kann ich das Paket wechseln?</summary>
+          <p data-i18n="benefits.faq.a1">Du kannst jederzeit über das Kunden‑Portal das aktuelle Paket kündigen und ein neues auswählen.</p>
+        </details>
+        <details>
+          <summary data-i18n="benefits.faq.q2">Was ist im Comfort‑Paket enthalten?</summary>
+          <p data-i18n="benefits.faq.a2">Vollkasko, Diebstahlschutz, kostenloser Inspektionsservice und flexible Laufzeiten.</p>
+        </details>
+        <details>
+          <summary data-i18n="benefits.faq.q3">Wie schnell erhalte ich das Fahrrad?</summary>
+          <p data-i18n="benefits.faq.a3">Nach Vertragsabschluss liefern wir das Bike innerhalb von 3‑5 Werktagen.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CALL‑TO‑ACTION -->
+  <section class="final-cta">
+    <div class="container" style="text-align:center; padding:2rem 0;">
+      <a href="kontakt.html" class="btn-primary" data-i18n="benefits.cta.button">Jetzt unverbindlich anfragen</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 bike to go – Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/translations.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
