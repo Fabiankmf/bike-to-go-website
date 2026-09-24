@@ -2639,6 +2639,9 @@ a.info-item-val:hover {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 /* Highlight most popular package */
