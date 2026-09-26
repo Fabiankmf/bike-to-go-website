@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fahrradhändler in deiner Nähe finden" data-i18n="seo.description">
+  <title data-i18n="seo.title">Händlersuche – bike to go</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER (identisch zu index.html) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="bike to go - Zur Startseite">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18.5" cy="17.5" r="3.5"/>
+            <circle cx="5.5" cy="17.5" r="3.5"/>
+            <circle cx="15" cy="5" r="1"/>
+            <path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
+          </svg>
+        </div>
+        <span class="logo-text">bike<span class="highlight">to</span>go</span>
+        <span class="logo-badge">Deutschlandweit</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+        <ul class="nav-list">
+          <li><a href="arbeitgeber.html" class="nav-link" data-i18n="nav.arbeitgeber">Arbeitgeber</a></li>
+          <li><a href="arbeitnehmer.html" class="nav-link" data-i18n="nav.arbeitnehmer">Arbeitnehmer</a></li>
+          <li><a href="selbstaendige.html" class="nav-link" data-i18n="nav.selbstaendige">Selbständige</a></li>
+          <li><a href="fahrradhaendler.html" class="nav-link" data-i18n="nav.fahrradhaendler">Fahrradhändler</a></li>
+          <li><a href="kontakt.html" class="nav-link" data-i18n="nav.kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-selector">
+          <select id="langSelect" aria-label="Sprache wählen">
+            <option value="de">🇩🇪 DE</option>
+            <option value="en">🇬🇧 EN</option>
+            <option value="es">🇪🇸 ES</option>
+          </select>
+        </div>
+        <a href="login.html" class="btn-login" aria-label="Login zum Portal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <span class="btn-text-full">Login</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <h1 class="hero-title">Fahrradhändler in deiner Nähe</h1>
+        <p class="hero-subtitle">Gib deine PLZ oder Stadt ein und sieh dir unsere Partner an.</p>
+      </div>
+    </section>
+
+    <!-- Simple search form (no backend) -->
+    <section class="search-section" style="padding:2rem 0; text-align:center;">
+      <form class="partner-search" style="margin-bottom:2rem;">
+        <input type="text" placeholder="PLZ oder Stadt" aria-label="PLZ oder Stadt" style="padding:0.5rem 1rem; width:250px; max-width:80%;">
+        <button type="submit" class="btn-primary" style="margin-left:0.5rem;">Suchen</button>
+      </form>
+    </section>
+
+    <!-- Partner cards grid -->
+    <section class="partners-grid-section" style="padding:0 1rem;">
+      <div class="partners-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1.5rem;">
+        <div class="card partner-card">
+          <h3>Fahrrad Meyer GmbH</h3>
+          <p>Beispielstraße 1<br>12345 Musterstadt</p>
+        </div>
+        <div class="card partner-card">
+          <h3>Radhaus Schmidt</h3>
+          <p>Hauptweg 12<br>54321 Beispielort</p>
+        </div>
+        <div class="card partner-card">
+          <h3>Bicycle Berlin</h3>
+          <p>Fahrradallee 7<br>10115 Berlin</p>
+        </div>
+        <div class="card partner-card">
+          <h3>Bike &amp; Co Hamburg</h3>
+          <p>Speicherstadt 3<br>20095 Hamburg</p>
+        </div>
+        <div class="card partner-card">
+          <h3>Radkette München</h3>
+          <p>Marienplatz 9<br>80331 München</p>
+        </div>
+        <div class="card partner-card">
+          <h3>Velo Köln</h3>
+          <p>Domplatte 5<br>50667 Köln</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (vollständig wie index.html) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18.5" cy="17.5" r="3.5"/>
+                <circle cx="5.5" cy="17.5" r="3.5"/>
+                <circle cx="15" cy="5" r="1"/>
+                <path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
+              </svg>
+            </div>
+            <span class="logo-text">bike<span class="highlight">to</span>go</span>
+          </a>
+          <p class="footer-brand-desc">Dein verlässlicher Partner für nachhaltiges, deutschlandweites Fahrradleasing. Mehr Gesundheit, weniger CO₂ und maximale Mobilität.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Zielgruppen</h4>
+          <ul class="footer-links">
+            <li><a href="arbeitgeber.html">Für Arbeitgeber</a></li>
+            <li><a href="arbeitnehmer.html">Für Arbeitnehmer</a></li>
+            <li><a href="selbstaendige.html">Für Selbständige</a></li>
+            <li><a href="fahrradhaendler.html">Für Fahrradhändler</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Service &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#leasingrechner">Leasingrechner</a></li>
+            <li><a href="benefits.html" data-placeholder="Pakete &amp; Benefits">Schutzpakete</a></li>
+            <li><a href="faq.html">Häufige Fragen (FAQ)</a></li>
+            <li><a href="haendlersuche.html">Händlersuche</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Rechtliches</h4>
+          <ul class="footer-links">
+            <li><a href="#impressum" data-placeholder="Impressum">Impressum</a></li>
+            <li><a href="#datenschutz" data-placeholder="Datenschutzerklärung">Datenschutz</a></li>
+            <li><a href="#agb" data-placeholder="AGB">AGB</a></li>
+            <li><a href="#cookies" data-placeholder="Cookie-Einstellungen">Cookie‑Einstellungen</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.</p>
+      <p>Entwickelt mit modernem HTML5, CSS3 &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/translations.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
