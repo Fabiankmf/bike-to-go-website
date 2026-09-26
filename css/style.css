@@ -2686,3 +2686,139 @@ a.info-item-val:hover {
   transform: rotate(180deg);
 }
 
+/* --------------------------------------------------------------------------
+   5. Legal Pages Styles (Impressum, Datenschutz, AGB, Cookies)
+   -------------------------------------------------------------------------- */
+
+/* Wrapper for legal page content */
+.legal-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Hero area for legal pages */
+.legal-hero {
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
+  color: var(--color-white);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: var(--radius-md);
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.legal-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal-hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Table of contents for legal pages */
+.legal-toc {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.legal-toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.legal-toc li {
+  margin-bottom: 0.5rem;
+}
+
+.legal-toc a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Individual sections */
+.legal-section {
+  background: var(--color-bg-card);
+  padding: 1.5rem;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+}
+
+.legal-section h2 {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  color: var(--color-text-main);
+}
+
+.legal-section h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 4px;
+  height: 1.2rem;
+  background: var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+/* Toggle switch for cookie categories */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-border);
+  transition: var(--transition-fast);
+  border-radius: var(--radius-full);
+}
+
+.toggle-switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #fff;
+  transition: var(--transition-fast);
+  border-radius: var(--radius-full);
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: var(--color-primary);
+}
+
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* Ensure toggle label spacing */
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}

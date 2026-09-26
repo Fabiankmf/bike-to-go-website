@@ -52,25 +52,46 @@
   </header>
 
   <main>
-    <section class="content-section">
-      <div class="container">
-        <h1>Cookie‑Einstellungen</h1>
-        <p>Auf dieser Seite können Sie die Verwendung von Cookies auf unserer Website steuern.</p>
-        <h2>Cookie‑Kategorien</h2>
-        <ul>
-          <li><strong>Notwendige Cookies</strong> – Unverzichtbar für die Grundfunktionalität der Seite.</li>
-          <li><strong>Funktionale Cookies</strong> – Ermöglichen erweiterte Features wie Spracheinstellung.</li>
-          <li><strong>Analyse‑Cookies</strong> – Dienen der statistischen Auswertung des Nutzerverhaltens.</li>
-        </ul>
-        <h2>Einstellungen</h2>
-        <form id="cookieForm">
-          <label><input type="checkbox" name="functional" checked disabled> Notwendige Cookies (immer aktiv)</label><br>
-          <label><input type="checkbox" name="functionalToggle"> Funktionale Cookies</label><br>
-          <label><input type="checkbox" name="analyticsToggle"> Analyse‑Cookies</label><br>
-          <button type="button" onclick="alert('Einstellungen gespeichert – (Demo)');">Einstellungen speichern</button>
-        </form>
-      </div>
-    </section>
+<section class="legal-page">
+  <div class="legal-hero">
+    <h1>Cookie‑Einstellungen</h1>
+    <p>Zuletzt aktualisiert: 2026-09-26</p>
+  </div>
+  <nav class="legal-toc">
+    <ul>
+      <li><a href="#notwendig">Notwendige Cookies</a></li>
+      <li><a href="#funktional">Funktionale Cookies</a></li>
+      <li><a href="#analyse">Analyse‑Cookies</a></li>
+    </ul>
+  </nav>
+  <div class="legal-section" id="notwendig">
+    <h2>Notwendige Cookies</h2>
+    <p>Unverzichtbar für die Grundfunktionalität der Seite.</p>
+    <label class="toggle-label">
+      <span>Notwendige Cookies (immer aktiv)</span>
+      <label class="toggle-switch"><input type="checkbox" name="functional" checked disabled><span class="slider"></span></label>
+    </label>
+  </div>
+  <div class="legal-section" id="funktional">
+    <h2>Funktionale Cookies</h2>
+    <p>Ermöglichen erweiterte Features wie Spracheinstellung.</p>
+    <label class="toggle-label">
+      <span>Funktionale Cookies</span>
+      <label class="toggle-switch"><input type="checkbox" name="functionalToggle"><span class="slider"></span></label>
+    </label>
+  </div>
+  <div class="legal-section" id="analyse">
+    <h2>Analyse‑Cookies</h2>
+    <p>Dienen der statistischen Auswertung des Nutzerverhaltens.</p>
+    <label class="toggle-label">
+      <span>Analyse‑Cookies</span>
+      <label class="toggle-switch"><input type="checkbox" name="analyticsToggle"><span class="slider"></span></label>
+    </label>
+  </div>
+  <div class="legal-section">
+    <button type="button" onclick="alert('Einstellungen gespeichert – (Demo)');">Einstellungen speichern</button>
+  </div>
+</section>
   </main>
 
   <!-- Footer (same as index) -->
