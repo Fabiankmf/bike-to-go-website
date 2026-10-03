@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
       priceDisplayBadge.textContent = `${getEuroCompactFormatter().format(price)} €`;
     }
     if (breakdownPrice) {
-      breakdownPrice.textContent = euroCurrencyFormatter.format(price);
+      breakdownPrice.textContent = getEuroFormatter().format(price);
     }
     if (breakdownTerm) {
       breakdownTerm.textContent = `${term} Monate`;
