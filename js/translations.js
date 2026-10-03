@@ -60,6 +60,82 @@ const translations = {
     "footer.title.services": "Service & Info",
     "footer.title.legal": "Rechtliches",
     "footer.bottom.copy": "© 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.",
+    // Added missing calculator keys (block 1)
+    "calculator.tag": {
+      "de": "Kostenlos & Live",
+      "en": "Free & Live",
+      "es": "Gratis & En vivo"
+    },
+    "calculator.title": {
+      "de": "Leasingrechner",
+      "en": "Leasing Calculator",
+      "es": "Calculadora de leasing"
+    },
+    "calculator.field.price": {
+      "de": "Fahrradpreis (brutto)",
+      "en": "Bike price (gross)",
+      "es": "Precio de la bicicleta (bruto)"
+    },
+    "calculator.preset.1500": {
+      "de": "1.500 €",
+      "en": "$1,500",
+      "es": "1.500 €"
+    },
+    "calculator.preset.2000": {
+      "de": "2.000 €",
+      "en": "$2,000",
+      "es": "2.000 €"
+    },
+    "calculator.preset.3500": {
+      "de": "3.500 €",
+      "en": "$3,500",
+      "es": "3.500 €"
+    },
+    "calculator.preset.5000": {
+      "de": "5.000 €",
+      "en": "$5,000",
+      "es": "5.000 €"
+    },
+    "calculator.field.term": {
+      "de": "Laufzeit",
+      "en": "Term",
+      "es": "Plazo"
+    },
+    "calculator.unit.months": {
+      "de": "Monate",
+      "en": "Months",
+      "es": "Meses"
+    },
+    "calculator.term.12": {
+      "de": "12",
+      "en": "12",
+      "es": "12"
+    },
+    "calculator.term.12desc": {
+      "de": "12 Monate / 1 Jahr",
+      "en": "12 months / 1 year",
+      "es": "12 meses / 1 año"
+    },
+    "calculator.term.24": {
+      "de": "24",
+      "en": "24",
+      "es": "24"
+    },
+    "calculator.term.24desc": {
+      "de": "24 Monate / 2 Jahre",
+      "en": "24 months / 2 years",
+      "es": "24 meses / 2 años"
+    },
+    "calculator.term.36": {
+      "de": "36",
+      "en": "36",
+      "es": "36"
+    },
+    "calculator.term.36desc": {
+      "de": "36 Monate / 3 Jahre",
+      "en": "36 months / 3 years",
+      "es": "36 meses / 3 años"
+    },
     "footer.bottom.dev": "Entwickelt mit modernem HTML5, CSS3 & JavaScript.",
   },
   en: {
@@ -101,7 +177,7 @@ const translations = {
     "footer.title.services": "Service & Info",
     "footer.title.legal": "Rechtliches",
     "footer.bottom.copy": "© 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.",
-    "footer.bottom.dev": "Entwickelt mit modernem HTML5, CSS3 & JavaScript.",
+
   },
   es: {
     "seo.title": "bike to go | Alquiler de bicicletas a nivel nacional",
