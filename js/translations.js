@@ -16,7 +16,7 @@ const translations = {
     "feature.risikofrei.title": "Risikofrei",
     "feature.risikofrei.desc": "Volle Sicherheit für dein Unternehmen und deine Mitarbeitenden. Mit unserem Rundumschutz bist du bei Kündigung, längerer Krankheit, Elternzeit oder Diebstahl optimal abgesichert.",
     "feature.einfacheEinfuehrung.title": "Einfache Einführung",
-    "feature.einfacheEinfuehrung.desc": "In wenigen Klicks zum eigenen Firmenrad‑Programm. Unser 100 % digitaler Prozess spart wertvolle Zeit in der Personalabteilung und ermöglicht einen schnellen Start ohne bürokratische Hürden."
+    "feature.einfacheEinfuehrung.desc": "In wenigen Klicks zum eigenen Firmenrad‑Programm. Unser 100 % digitaler Prozess spart wertvolle Zeit in der Personalabteilung und ermöglicht einen schnellen Start ohne bürokratische Hürden.",
         "calculator.term.standardBadge": "Standard",
     "calculator.inclusive": "Inklusive",
     "calculator.breakdown.taxSavings": "bis zu 40%",
