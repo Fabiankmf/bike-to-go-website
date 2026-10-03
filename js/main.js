@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   applyTranslations(storedLang);
+  window.currentLang = storedLang;
 
   // --------------------------------------------------------------------------
   // 1. Mobile Menu Navigation
@@ -196,7 +197,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroCalcBtn = document.getElementById('heroCalcBtn');
   const calcCard = document.getElementById('calcCard');
 
-  const euroCurrencyFormatter = new Intl.NumberFormat('de-DE', {
+  // Locale‑aware currency formatters
+  function getEuroFormatter() {
+    const lang = window.currentLang || 'de';
+    if (lang === 'en') {
+      return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+    // es and de use Euro
+    return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function getEuroCompactFormatter() {
+    const lang = window.currentLang || 'de';
+    // compact numbers (no decimal) – keep locale for thousand separator
+    return new Intl.NumberFormat(lang === 'en' ? 'en-US' : 'de-DE', { maximumFractionDigits: 0 });
+  }
+
     style: 'currency',
     currency: 'EUR',
     minimumFractionDigits: 2,
@@ -226,9 +242,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const rawRate = term > 0 ? (price / term) * 1.1 : 0;
 
     // Update Result & Breakdown Displays
-    monthlyRateResult.textContent = euroCurrencyFormatter.format(rawRate);
+    monthlyRateResult.textContent = getEuroFormatter().format(rawRate);
     if (priceDisplayBadge) {
-      priceDisplayBadge.textContent = `${euroCompactFormatter.format(price)} €`;
+      priceDisplayBadge.textContent = `${getEuroCompactFormatter().format(price)} €`;
     }
     if (breakdownPrice) {
       breakdownPrice.textContent = euroCurrencyFormatter.format(price);

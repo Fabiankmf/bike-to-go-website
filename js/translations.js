@@ -17,7 +17,29 @@ const translations = {
     "feature.risikofrei.desc": "Volle Sicherheit für dein Unternehmen und deine Mitarbeitenden. Mit unserem Rundumschutz bist du bei Kündigung, längerer Krankheit, Elternzeit oder Diebstahl optimal abgesichert.",
     "feature.einfacheEinfuehrung.title": "Einfache Einführung",
     "feature.einfacheEinfuehrung.desc": "In wenigen Klicks zum eigenen Firmenrad‑Programm. Unser 100 % digitaler Prozess spart wertvolle Zeit in der Personalabteilung und ermöglicht einen schnellen Start ohne bürokratische Hürden."
-    // Add more keys as needed...
+        "calculator.term.standardBadge": "Standard",
+    "calculator.inclusive": "Inklusive",
+    "calculator.breakdown.taxSavings": "bis zu 40%",
+    "calculator.term.unitMonth": "Monat",
+    "calculator.term.unitMonths": "Monate",
+    // Newly added keys
+    "calculator.subtitle": "Ermittle in Echtzeit deine individuelle monatliche Leasingrate für dein Traum-Fahrrad oder E-Bike.",
+    "calculator.field.priceAria": "Fahrradpreis in Euro",
+    "calculator.rangeAria": "Fahrradpreis Schieberegler",
+    "calculator.result.perMonth": "/ Monat",
+    "calculator.result.tag": "Echtzeit-Berechnung",
+    "calculator.result.title": "Deine monatliche Rate",
+    "calculator.cta.hint": "Inkl. 10% Rundumschutz & Service",
+    "chat.input.placeholder": "Schreibe eine Nachricht...",
+    "chat.quickAction.1": "Wie funktioniert Fahrradleasing?",
+    "chat.quickAction.2": "Ich möchte mein Unternehmen anmelden",
+    "chat.quickAction.3": "Partnerhändler in meiner Nähe",
+    "footer.brand.desc": "Dein verlässlicher Partner für nachhaltiges, deutschlandweites Fahrradleasing. Mehr Gesundheit, weniger CO₂ und maximale Mobilität.",
+    "footer.title.targetGroups": "Zielgruppen",
+    "footer.title.services": "Service & Info",
+    "footer.title.legal": "Rechtliches",
+    "footer.bottom.copy": "© 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.",
+    "footer.bottom.dev": "Entwickelt mit modernem HTML5, CSS3 & JavaScript.",
   },
   en: {
     "seo.title": "bike to go | Nationwide Bike Leasing",
@@ -37,7 +59,29 @@ const translations = {
     "feature.risikofrei.desc": "Full protection for your company and employees. Our comprehensive coverage safeguards you in case of resignation, extended illness, parental leave or theft.",
     "feature.einfacheEinfuehrung.title": "Easy Onboarding",
     "feature.einfacheEinfuehrung.desc": "In just a few clicks to your corporate bike program. Our 100 % digital process saves valuable HR time and enables a fast start without bureaucratic hurdles."
-    // Add more keys as needed...
+        "calculator.term.standardBadge": "Standard",
+    "calculator.inclusive": "Inclusive",
+    "calculator.breakdown.taxSavings": "up to 40%",
+    "calculator.term.unitMonth": "Month",
+    "calculator.term.unitMonths": "Months",
+    // Newly added keys
+    "calculator.subtitle": "Ermittle in Echtzeit deine individuelle monatliche Leasingrate für dein Traum-Fahrrad oder E-Bike.",
+    "calculator.field.priceAria": "Fahrradpreis in Euro",
+    "calculator.rangeAria": "Fahrradpreis Schieberegler",
+    "calculator.result.perMonth": "/ Monat",
+    "calculator.result.tag": "Echtzeit-Berechnung",
+    "calculator.result.title": "Deine monatliche Rate",
+    "calculator.cta.hint": "Inkl. 10% Rundumschutz & Service",
+    "chat.input.placeholder": "Schreibe eine Nachricht...",
+    "chat.quickAction.1": "Wie funktioniert Fahrradleasing?",
+    "chat.quickAction.2": "Ich möchte mein Unternehmen anmelden",
+    "chat.quickAction.3": "Partnerhändler in meiner Nähe",
+    "footer.brand.desc": "Dein verlässlicher Partner für nachhaltiges, deutschlandweites Fahrradleasing. Mehr Gesundheit, weniger CO₂ und maximale Mobilität.",
+    "footer.title.targetGroups": "Zielgruppen",
+    "footer.title.services": "Service & Info",
+    "footer.title.legal": "Rechtliches",
+    "footer.bottom.copy": "© 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.",
+    "footer.bottom.dev": "Entwickelt mit modernem HTML5, CSS3 & JavaScript.",
   },
   es: {
     "seo.title": "bike to go | Alquiler de bicicletas a nivel nacional",
@@ -57,7 +101,24 @@ const translations = {
     "feature.risikofrei.desc": "Protección completa para su empresa y empleados. Nuestra cobertura integral le protege en caso de renuncia, enfermedad prolongada, licencia parental o robo.",
     "feature.einfacheEinfuehrung.title": "Entrada Fácil",
     "feature.einfacheEinfuehrung.desc": "En solo unos clics a su programa de bicicletas corporativas. Nuestro proceso 100 % digital ahorra tiempo valioso en recursos humanos y permite un inicio rápido sin obstáculos burocráticos."
-    // Add more keys as needed...
+    // Newly added keys
+    "calculator.subtitle": "Ermittle in Echtzeit deine individuelle monatliche Leasingrate für dein Traum-Fahrrad oder E-Bike.",
+    "calculator.field.priceAria": "Fahrradpreis in Euro",
+    "calculator.rangeAria": "Fahrradpreis Schieberegler",
+    "calculator.result.perMonth": "/ Monat",
+    "calculator.result.tag": "Echtzeit-Berechnung",
+    "calculator.result.title": "Deine monatliche Rate",
+    "calculator.cta.hint": "Inkl. 10% Rundumschutz & Service",
+    "chat.input.placeholder": "Schreibe eine Nachricht...",
+    "chat.quickAction.1": "Wie funktioniert Fahrradleasing?",
+    "chat.quickAction.2": "Ich möchte mein Unternehmen anmelden",
+    "chat.quickAction.3": "Partnerhändler in meiner Nähe",
+    "footer.brand.desc": "Dein verlässlicher Partner für nachhaltiges, deutschlandweites Fahrradleasing. Mehr Gesundheit, weniger CO₂ und maximale Mobilität.",
+    "footer.title.targetGroups": "Zielgruppen",
+    "footer.title.services": "Service & Info",
+    "footer.title.legal": "Rechtliches",
+    "footer.bottom.copy": "© 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.",
+    "footer.bottom.dev": "Entwickelt mit modernem HTML5, CSS3 & JavaScript.",
   }
 };
 export default translations;
