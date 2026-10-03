@@ -213,11 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return new Intl.NumberFormat(lang === 'en' ? 'en-US' : 'de-DE', { maximumFractionDigits: 0 });
   }
 
-    style: 'currency',
-    currency: 'EUR',
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-  });
+
 
   const euroCompactFormatter = new Intl.NumberFormat('de-DE', {
     maximumFractionDigits: 0
