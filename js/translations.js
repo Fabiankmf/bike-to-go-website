@@ -80,7 +80,7 @@ const translations = {
     "feature.risikofrei.title": "Risk Free",
     "feature.risikofrei.desc": "Full protection for your company and employees. Our comprehensive coverage safeguards you in case of resignation, extended illness, parental leave or theft.",
     "feature.einfacheEinfuehrung.title": "Easy Onboarding",
-    "feature.einfacheEinfuehrung.desc": "In just a few clicks to your corporate bike program. Our 100 % digital process saves valuable HR time and enables a fast start without bureaucratic hurdles."
+    "feature.einfacheEinfuehrung.desc": "In just a few clicks to your corporate bike program. Our 100 % digital process saves valuable HR time and enables a fast start without bureaucratic hurdles.",
         "calculator.term.standardBadge": "Standard",
     "calculator.inclusive": "Inclusive",
     "calculator.breakdown.taxSavings": "up to 40%",
