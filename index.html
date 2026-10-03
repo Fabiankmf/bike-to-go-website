@@ -22,7 +22,7 @@
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <!-- Logo "bike to go" -->
-      <a href="index.html" class="logo" aria-label="bike to go - Zur Startseite" data-i18n="header.logoAria">
+      <a href="index.html" class="logo" aria-label="bike to go - Zur Startseite" data-i18n-aria="header.logoAria">
         <div class="logo-icon">
           <!-- Bicycle SVG Icon -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -39,7 +39,7 @@
       </a>
 
       <!-- Desktop & Mobile Navigation Links -->
-      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation" data-i18n="nav.ariaLabel">
+      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation" data-i18n-aria="nav.ariaLabel">
           <ul class="nav-list">
             <li><a href="arbeitgeber.html" class="nav-link" data-i18n="nav.arbeitgeber">Arbeitgeber</a></li>
             <li><a href="arbeitnehmer.html" class="nav-link" data-i18n="nav.arbeitnehmer">Arbeitnehmer</a></li>
@@ -53,7 +53,7 @@
       <div class="header-actions">
         <!-- Language Selector -->
         <div class="lang-selector">
-          <select id="langSelect" aria-label="Sprache wählen" data-i18n="header.langSelectAria">
+          <select id="langSelect" aria-label="Sprache wählen" data-i18n-aria="header.langSelectAria">
             <option value="de">🇩🇪 DE</option>
             <option value="en">🇬🇧 EN</option>
             <option value="es">🇪🇸 ES</option>
@@ -61,7 +61,7 @@
         </div>
 
         <!-- Login Button -->
-        <a href="login.html" class="btn-login" aria-label="Login zum Portal" data-i18n="header.loginAria">
+        <a href="login.html" class="btn-login" aria-label="Login zum Portal" data-i18n-aria="header.loginAria">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
             <circle cx="12" cy="7" r="4"/>
@@ -70,7 +70,7 @@
         </a>
 
         <!-- Mobile Hamburger Menu Button -->
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" data-i18n="header.mobileToggleAria" aria-expanded="false" aria-controls="mainNav">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" data-i18n-aria="header.mobileToggleAria" aria-expanded="false" aria-controls="mainNav">
           <span></span>
           <span></span>
           <span></span>
@@ -322,10 +322,10 @@
 
               <!-- Quick Price Presets -->
               <div class="calc-presets" aria-label="Schnellauswahl Preis">
-                <button type="button" class="preset-btn" data-i18n="calculator.preset.1500">1.500 €</button>
-                <button type="button" class="preset-btn active" data-i18n="calculator.preset.2000">2.000 €</button>
-                <button type="button" class="preset-btn" data-i18n="calculator.preset.3500">3.500 €</button>
-                <button type="button" class="preset-btn" data-i18n="calculator.preset.5000">5.000 €</button>
+                <button type="button" class="preset-btn" data-value="1500">1.500 €</button>
+                <button type="button" class="preset-btn active" data-value="2000">2.000 €</button>
+                <button type="button" class="preset-btn" data-value="3500">3.500 €</button>
+                <button type="button" class="preset-btn" data-value="5000">5.000 €</button>
               </div>
             </div>
 
@@ -375,7 +375,7 @@
             <!-- Prominent Rate Box -->
             <div class="rate-highlight-box">
               <div class="rate-amount-wrapper">
-                <span class="rate-amount" id="monthlyRateResult" data-i18n="calculator.result.amount">61,11 €</span>
+                <span class="rate-amount" id="monthlyRateResult">61,11 €</span>
                 <span class="rate-period" data-i18n="calculator.result.perMonth">/ Monat</span>
               </div>
               <p class="rate-hint" data-i18n="calculator.cta.hint">
@@ -390,11 +390,11 @@
             <div class="rate-breakdown">
               <div class="breakdown-row">
                 <span data-i18n="calculator.breakdown.priceLabel">Fahrradpreis (brutto):</span>
-                <strong id="breakdownPrice" data-i18n="calculator.breakdown.priceValue">2.000,00 €</strong>
+                <strong id="breakdownPrice">2.000,00 €</strong>
               </div>
               <div class="breakdown-row">
                 <span data-i18n="calculator.breakdown.termLabel">Laufzeit:</span>
-                <strong id="breakdownTerm" data-i18n="calculator.breakdown.termValue">36 Monate</strong>
+                <strong id="breakdownTerm">36 Monate</strong>
               </div>
               <div class="breakdown-row">
                 <span data-i18n="calculator.breakdown.insuranceLabel">Versicherung & Service (10%):</span>
@@ -408,7 +408,7 @@
 
             <!-- CTA Box -->
             <div class="calc-cta-box">
-              <a href="#kontakt" class="btn-calc-cta" data-i18n-placeholder="calculator.cta.placeholder">
+              <a href="#kontakt" class="btn-calc-cta">
                 <span data-i18n="calculator.cta.text">Dieses Angebot anfragen</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -667,7 +667,6 @@
       <!-- Bottom Bar -->
       <div class="footer-bottom">
         <p>&copy; 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.</p>
-        <p>Entwickelt mit modernem HTML5, CSS3 & JavaScript.</p>
       </div>
     </div>
   <!-- Footer links updated -->

@@ -1,5 +1,16 @@
 const translations = {
   de: {
+    "calculator.tag": "Kostenlos & Live",
+    "calculator.title": "Leasingrechner",
+    "calculator.field.price": "Fahrradpreis (brutto)",
+    "calculator.field.term": "Laufzeit",
+    "calculator.unit.months": "Monate",
+    "calculator.term.12": "12 Monate",
+    "calculator.term.12desc": "1 Jahr",
+    "calculator.term.24": "24 Monate",
+    "calculator.term.24desc": "2 Jahre",
+    "calculator.term.36": "36 Monate",
+    "calculator.term.36desc": "3 Jahre",
     "header.logoAria": "bike to go – Zur Startseite",
     "header.logoBadge": "Deutschlandweit",
     "nav.ariaLabel": "Hauptnavigation",
@@ -18,17 +29,6 @@ const translations = {
     "hero.stats.flexible": "Deutschlandweit flexibel",
     "hero.stats.free0": "0 €",
     "hero.stats.employerCost": "Arbeitgeber-Kosten",
-    "calculator.tag": "Kostenlos & Live",
-    "calculator.title": "Leasingrechner",
-    "calculator.field.price": "Fahrradpreis (brutto)",
-    "calculator.field.term": "Laufzeit",
-    "calculator.unit.months": "Monate",
-    "calculator.term.12": "12 Monate",
-    "calculator.term.12desc": "1 Jahr",
-    "calculator.term.24": "24 Monate",
-    "calculator.term.24desc": "2 Jahre",
-    "calculator.term.36": "36 Monate",
-    "calculator.term.36desc": "3 Jahre",
     "calculator.breakdown.priceLabel": "Fahrradpreis (brutto):",
     "calculator.breakdown.termLabel": "Laufzeit:",
     "calculator.breakdown.insuranceLabel": "Versicherung & Service (10%):",
@@ -64,12 +64,9 @@ const translations = {
     "calculator.breakdown.taxSavings": "bis zu 40%",
     "calculator.term.unitMonth": "Monat",
     "calculator.term.unitMonths": "Monate",
-    "section.vorteile.title": "Überzeugende Auswahl",
-    "feature.risikofrei.title": "Risikofrei",
     "feature.risikofrei.item1": "Integrierter Vollkasko- & Diebstahlschutz",
     "feature.risikofrei.item2": "Absicherung bei Jobwechsel & Elternzeit",
     "feature.risikofrei.item3": "24/7 deutschlandweite Mobilitätsgarantie",
-    "feature.einfacheEinfuehrung.title": "Einfache Einführung",
     "feature.einfacheEinfuehrung.item1": "100% digitale & papierlose Abwicklung",
     "feature.einfacheEinfuehrung.item2": "Startbereit in unter 24 Stunden",
     "feature.einfacheEinfuehrung.item3": "Persönlicher Ansprechpartner inklusive",
@@ -102,83 +99,6 @@ const translations = {
     "footer.title.services": "Service & Info",
     "footer.title.legal": "Rechtliches",
     "footer.bottom.copy": "© 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.",
-    // Added missing calculator keys (block 1)
-    "calculator.tag": {
-      "de": "Kostenlos & Live",
-      "en": "Free & Live",
-      "es": "Gratis & En vivo"
-    },
-    "calculator.title": {
-      "de": "Leasingrechner",
-      "en": "Leasing Calculator",
-      "es": "Calculadora de leasing"
-    },
-    "calculator.field.price": {
-      "de": "Fahrradpreis (brutto)",
-      "en": "Bike price (gross)",
-      "es": "Precio de la bicicleta (bruto)"
-    },
-    "calculator.preset.1500": {
-      "de": "1.500 €",
-      "en": "$1,500",
-      "es": "1.500 €"
-    },
-    "calculator.preset.2000": {
-      "de": "2.000 €",
-      "en": "$2,000",
-      "es": "2.000 €"
-    },
-    "calculator.preset.3500": {
-      "de": "3.500 €",
-      "en": "$3,500",
-      "es": "3.500 €"
-    },
-    "calculator.preset.5000": {
-      "de": "5.000 €",
-      "en": "$5,000",
-      "es": "5.000 €"
-    },
-    "calculator.field.term": {
-      "de": "Laufzeit",
-      "en": "Term",
-      "es": "Plazo"
-    },
-    "calculator.unit.months": {
-      "de": "Monate",
-      "en": "Months",
-      "es": "Meses"
-    },
-    "calculator.term.12": {
-      "de": "12",
-      "en": "12",
-      "es": "12"
-    },
-    "calculator.term.12desc": {
-      "de": "12 Monate / 1 Jahr",
-      "en": "12 months / 1 year",
-      "es": "12 meses / 1 año"
-    },
-    "calculator.term.24": {
-      "de": "24",
-      "en": "24",
-      "es": "24"
-    },
-    "calculator.term.24desc": {
-      "de": "24 Monate / 2 Jahre",
-      "en": "24 months / 2 years",
-      "es": "24 meses / 2 años"
-    },
-    "calculator.term.36": {
-      "de": "36",
-      "en": "36",
-      "es": "36"
-    },
-    "calculator.term.36desc": {
-      "de": "36 Monate / 3 Jahre",
-      "en": "36 months / 3 years",
-      "es": "36 meses / 3 años"
-    },
-    "footer.bottom.dev": "Entwickelt mit modernem HTML5, CSS3 & JavaScript.",
   },
   en: {
     "header.logoAria": "bike to go – Go to homepage",
@@ -264,6 +184,9 @@ const translations = {
 
   },
   es: {
+    "calculator.term.standardBadge": "Estándar",
+    "calculator.inclusive": "Incluido",
+    "calculator.breakdown.taxSavings": "hasta un 40 %",
     "header.logoAria": "bike to go – Ir a la página de inicio",
     "header.logoBadge": "En toda Alemania",
     "nav.ariaLabel": "Navegación principal",
@@ -339,7 +262,6 @@ const translations = {
     "footer.title.services": "Servicio e información",
     "footer.title.legal": "Rechtliches",
     "footer.bottom.copy": "© 2026 bike to go GmbH. Todos los derechos reservados. Leasing de bicicletas en toda Alemania.",
-    "footer.bottom.dev": "Entwickelt mit modernem HTML5, CSS3 & JavaScript.",
   }
 };
 export default translations;

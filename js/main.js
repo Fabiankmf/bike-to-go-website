@@ -3,6 +3,8 @@ import translations from './translations.js';
 /**
  * Apply translations for the given language code.
  * Updates all elements with a data-i18n attribute.
+ * Also updates aria-label, placeholder, and title attributes when
+ * data-i18n-aria, data-i18n-placeholder or data-i18n-title are present.
  */
 function applyTranslations(lang) {
   const dict = translations[lang] || {};
@@ -12,6 +14,27 @@ function applyTranslations(lang) {
     if (dict[key]) {
       // Use innerHTML to preserve HTML tags in translation strings
       el.innerHTML = dict[key];
+    }
+  });
+  // Update elements with data-i18n-aria
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const key = el.getAttribute('data-i18n-aria');
+    if (dict[key]) {
+      el.setAttribute('aria-label', dict[key]);
+    }
+  });
+  // Update elements with data-i18n-placeholder
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (dict[key]) {
+      el.setAttribute('placeholder', dict[key]);
+    }
+  });
+  // Update elements with data-i18n-title
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    const key = el.getAttribute('data-i18n-title');
+    if (dict[key]) {
+      el.setAttribute('title', dict[key]);
     }
   });
   // Update <title>
@@ -25,6 +48,7 @@ function applyTranslations(lang) {
     metaDesc.setAttribute('content', dict[metaDesc.getAttribute('data-i18n')]);
   }
 }
+
 
 // Initialize language from localStorage or default to German
 document.addEventListener('DOMContentLoaded', () => {
