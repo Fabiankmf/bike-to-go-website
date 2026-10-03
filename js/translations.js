@@ -22,7 +22,6 @@ const translations = {
     "calculator.breakdown.taxSavings": "bis zu 40%",
     "calculator.term.unitMonth": "Monat",
     "calculator.term.unitMonths": "Monate",
-        // Newly added keys
     "section.vorteile.title": "Überzeugende Auswahl",
     "feature.risikofrei.title": "Risikofrei",
     "feature.risikofrei.item1": "Integrierter Vollkasko- & Diebstahlschutz",
@@ -86,7 +85,6 @@ const translations = {
     "calculator.breakdown.taxSavings": "up to 40%",
     "calculator.term.unitMonth": "Month",
     "calculator.term.unitMonths": "Months",
-    // Newly added keys
     "calculator.subtitle": "Ermittle in Echtzeit deine individuelle monatliche Leasingrate für dein Traum-Fahrrad oder E-Bike.",
     "calculator.field.priceAria": "Fahrradpreis in Euro",
     "calculator.rangeAria": "Fahrradpreis Schieberegler",
@@ -122,8 +120,7 @@ const translations = {
     "feature.risikofrei.title": "Sin Riesgo",
     "feature.risikofrei.desc": "Protección completa para su empresa y empleados. Nuestra cobertura integral le protege en caso de renuncia, enfermedad prolongada, licencia parental o robo.",
     "feature.einfacheEinfuehrung.title": "Entrada Fácil",
-    "feature.einfacheEinfuehrung.desc": "En solo unos clics a su programa de bicicletas corporativas. Nuestro proceso 100 % digital ahorra tiempo valioso en recursos humanos y permite un inicio rápido sin obstáculos burocráticos."
-    // Newly added keys
+    "feature.einfacheEinfuehrung.desc": "En solo unos clics a su programa de bicicletas corporativas. Nuestro proceso 100 % digital ahorra tiempo valioso en recursos humanos y permite un inicio rápido sin obstáculos burocráticos.",
     "calculator.subtitle": "Ermittle in Echtzeit deine individuelle monatliche Leasingrate für dein Traum-Fahrrad oder E-Bike.",
     "calculator.field.priceAria": "Fahrradpreis in Euro",
     "calculator.rangeAria": "Fahrradpreis Schieberegler",
