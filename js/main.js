@@ -12,10 +12,18 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) {
-      // Use innerHTML to preserve HTML tags in translation strings
       el.innerHTML = dict[key];
     }
   });
+
+  // Update elements with data-i18n-html
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    if (dict[key]) {
+      el.innerHTML = dict[key];
+    }
+  });
+
   // Update elements with data-i18n-aria
   document.querySelectorAll('[data-i18n-aria]').forEach(el => {
     const key = el.getAttribute('data-i18n-aria');
