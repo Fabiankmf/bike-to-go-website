@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Cookie-Einstellungen der bike to go GmbH">
-  <title>Cookie-Einstellungen | bike to go</title>
+  <title data-i18n="legal.cookies.meta.title">Cookie-Einstellungen | bike to go</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Header (same as index) -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="bike to go - Zur Startseite">
+      <!-- Logo "bike to go" -->
+      <a href="index.html" class="logo" aria-label="bike to go - Zur Startseite" data-i18n-aria="header.logoAria">
         <div class="logo-icon">
+          <!-- Bicycle SVG Icon -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="18.5" cy="17.5" r="3.5"/>
             <circle cx="5.5" cy="17.5" r="3.5"/>
@@ -20,33 +22,49 @@
             <path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
           </svg>
         </div>
-        <span class="logo-text">bike<span class="highlight">to</span>go</span>
-        <span class="logo-badge">Deutschlandweit</span>
+        <span class="logo-text">
+          bike<span class="highlight">to</span>go
+        </span>
+        <span class="logo-badge" data-i18n="header.logoBadge">Deutschlandweit</span>
       </a>
-      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
-        <ul class="nav-list">
-          <li><a href="arbeitgeber.html" class="nav-link" data-i18n="nav.arbeitgeber">Arbeitgeber</a></li>
-          <li><a href="arbeitnehmer.html" class="nav-link" data-i18n="nav.arbeitnehmer">Arbeitnehmer</a></li>
-          <li><a href="selbstaendige.html" class="nav-link" data-i18n="nav.selbstaendige">Selbständige</a></li>
-          <li><a href="fahrradhaendler.html" class="nav-link" data-i18n="nav.fahrradhaendler">Fahrradhändler</a></li>
-          <li><a href="kontakt.html" class="nav-link" data-i18n="nav.kontakt">Kontakt</a></li>
-        </ul>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation" data-i18n-aria="nav.ariaLabel">
+          <ul class="nav-list">
+            <li><a href="arbeitgeber.html" class="nav-link" data-i18n="nav.arbeitgeber">Arbeitgeber</a></li>
+            <li><a href="arbeitnehmer.html" class="nav-link" data-i18n="nav.arbeitnehmer">Arbeitnehmer</a></li>
+            <li><a href="selbstaendige.html" class="nav-link" data-i18n="nav.selbstaendige">Selbständige</a></li>
+            <li><a href="fahrradhaendler.html" class="nav-link" data-i18n="nav.fahrradhaendler">Fahrradhändler</a></li>
+            <li><a href="kontakt.html" class="nav-link" data-i18n="nav.kontakt">Kontakt</a></li>
+          </ul>
       </nav>
+
+      <!-- Right Header Actions: Language & Login -->
       <div class="header-actions">
+        <!-- Language Selector -->
         <div class="lang-selector">
-          <select id="langSelect" aria-label="Sprache wählen">
+          <select id="langSelect" aria-label="Sprache wählen" data-i18n-aria="header.langSelectAria">
             <option value="de">🇩🇪 DE</option>
             <option value="en">🇬🇧 EN</option>
             <option value="es">🇪🇸 ES</option>
           </select>
         </div>
-        <a href="login.html" class="btn-login" aria-label="Login zum Portal">
+
+        <!-- Login Button -->
+        <a href="login.html" class="btn-login" aria-label="Login zum Portal" data-i18n-aria="header.loginAria">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
             <circle cx="12" cy="7" r="4"/>
           </svg>
-          <span class="btn-text-full">Login</span>
+          <span class="btn-text-full" data-i18n="header.login">Login</span>
         </a>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" data-i18n-aria="header.mobileToggleAria" aria-expanded="false" aria-controls="mainNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
@@ -54,42 +72,43 @@
   <main>
 <section class="legal-page">
   <div class="legal-hero">
-    <h1>Cookie‑Einstellungen</h1>
-    <p>Zuletzt aktualisiert: 2026-09-26</p>
-  </div>
+    <h1 data-i18n="footer.link.cookieSettings">Cookie‑Einstellungen</h1>
+    <p data-i18n="legal.terms.updated">Zuletzt aktualisiert: 26. September 2026</p>
+  <p class="legal-translation-notice" data-i18n="legal.translationNotice" hidden>Hinweis: Diese Übersetzung dient nur der Information. Rechtlich verbindlich ist die deutsche Fassung.</p>
+    </div>
   <nav class="legal-toc">
     <ul>
-      <li><a href="#notwendig">Notwendige Cookies</a></li>
-      <li><a href="#funktional">Funktionale Cookies</a></li>
-      <li><a href="#analyse">Analyse‑Cookies</a></li>
+      <li><a href="#notwendig" data-i18n="legal.cookies.necessary.title">Notwendige Cookies</a></li>
+      <li><a href="#funktional" data-i18n="legal.cookies.functional.title">Funktionale Cookies</a></li>
+      <li><a href="#analyse" data-i18n="legal.cookies.analytics.title">Analyse‑Cookies</a></li>
     </ul>
   </nav>
   <div class="legal-section" id="notwendig">
-    <h2>Notwendige Cookies</h2>
-    <p>Unverzichtbar für die Grundfunktionalität der Seite.</p>
+    <h2 data-i18n="legal.cookies.necessary.title">Notwendige Cookies</h2>
+    <p data-i18n="legal.cookies.necessary.text">Unverzichtbar für die Grundfunktionalität der Seite.</p>
     <label class="toggle-label">
-      <span>Notwendige Cookies (immer aktiv)</span>
+      <span data-i18n="legal.cookies.necessary.label">Notwendige Cookies (immer aktiv)</span>
       <label class="toggle-switch"><input type="checkbox" name="functional" checked disabled><span class="slider"></span></label>
     </label>
   </div>
   <div class="legal-section" id="funktional">
-    <h2>Funktionale Cookies</h2>
-    <p>Ermöglichen erweiterte Features wie Spracheinstellung.</p>
+    <h2 data-i18n="legal.cookies.functional.title">Funktionale Cookies</h2>
+    <p data-i18n="legal.cookies.functional.text">Ermöglichen erweiterte Features wie Spracheinstellung.</p>
     <label class="toggle-label">
-      <span>Funktionale Cookies</span>
+      <span data-i18n="legal.cookies.functional.title">Funktionale Cookies</span>
       <label class="toggle-switch"><input type="checkbox" name="functionalToggle"><span class="slider"></span></label>
     </label>
   </div>
   <div class="legal-section" id="analyse">
-    <h2>Analyse‑Cookies</h2>
-    <p>Dienen der statistischen Auswertung des Nutzerverhaltens.</p>
+    <h2 data-i18n="legal.cookies.analytics.title">Analyse‑Cookies</h2>
+    <p data-i18n="legal.cookies.analytics.text">Dienen der statistischen Auswertung des Nutzerverhaltens.</p>
     <label class="toggle-label">
-      <span>Analyse‑Cookies</span>
+      <span data-i18n="legal.cookies.analytics.title">Analyse‑Cookies</span>
       <label class="toggle-switch"><input type="checkbox" name="analyticsToggle"><span class="slider"></span></label>
     </label>
   </div>
   <div class="legal-section">
-    <button type="button" onclick="alert('Einstellungen gespeichert – (Demo)');">Einstellungen speichern</button>
+    <button type="button" onclick="alert('Einstellungen gespeichert – (Demo)');" data-i18n="legal.cookies.save">Einstellungen speichern</button>
   </div>
 </section>
   </main>
@@ -110,7 +129,7 @@
             </div>
             <span class="logo-text">bike<span class="highlight">to</span>go</span>
           </a>
-          <p class="footer-brand-desc">Dein verlässlicher Partner für nachhaltiges, deutschlandweites Fahrradleasing.</p>
+          <p class="footer-brand-desc" data-i18n="footer.brand.desc.short">Dein verlässlicher Partner für nachhaltiges, deutschlandweites Fahrradleasing.</p>
         </div>
         <div>
           <h4 class="footer-title" data-i18n="footer.title.targetGroups">Zielgruppen</h4>
@@ -136,7 +155,7 @@
             <li><a href="impressum.html" data-i18n="footer.link.impressum">Impressum</a></li>
             <li><a href="datenschutz.html" data-i18n="footer.link.datenschutz">Datenschutz</a></li>
             <li><a href="agb.html" data-i18n="footer.link.agb">AGB</a></li>
-            <li><a href="cookies.html">Cookie‑Einstellungen</a></li>
+            <li><a href="cookies.html" data-i18n="footer.link.cookieSettings">Cookie‑Einstellungen</a></li>
           </ul>
         </div>
       </div>
