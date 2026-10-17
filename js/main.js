@@ -8,6 +8,9 @@ import translations from './translations.js';
  */
 function applyTranslations(lang) {
   const dict = translations[lang] || {};
+  document.documentElement.lang = lang;
+  window.currentLang = lang;
+  document.querySelectorAll('.legal-translation-notice').forEach(el => { el.hidden = (lang === 'de'); });
   // Update elements with data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
