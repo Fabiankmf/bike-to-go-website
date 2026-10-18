@@ -11,8 +11,10 @@
   <!-- HEADER (identisch zu index.html) -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="bike to go - Zur Startseite">
+      <!-- Logo "bike to go" -->
+      <a href="index.html" class="logo" aria-label="bike to go - Zur Startseite" data-i18n-aria="header.logoAria">
         <div class="logo-icon">
+          <!-- Bicycle SVG Icon -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="18.5" cy="17.5" r="3.5"/>
             <circle cx="5.5" cy="17.5" r="3.5"/>
@@ -20,37 +22,48 @@
             <path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
           </svg>
         </div>
-        <span class="logo-text">bike<span class="highlight">to</span>go</span>
-        <span class="logo-badge">Deutschlandweit</span>
+        <span class="logo-text">
+          bike<span class="highlight">to</span>go
+        </span>
+        <span class="logo-badge" data-i18n="header.logoBadge">Deutschlandweit</span>
       </a>
 
-      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
-        <ul class="nav-list">
-          <li><a href="arbeitgeber.html" class="nav-link" data-i18n="nav.arbeitgeber">Arbeitgeber</a></li>
-          <li><a href="arbeitnehmer.html" class="nav-link" data-i18n="nav.arbeitnehmer">Arbeitnehmer</a></li>
-          <li><a href="selbstaendige.html" class="nav-link" data-i18n="nav.selbstaendige">Selbständige</a></li>
-          <li><a href="fahrradhaendler.html" class="nav-link" data-i18n="nav.fahrradhaendler">Fahrradhändler</a></li>
-          <li><a href="kontakt.html" class="nav-link" data-i18n="nav.kontakt">Kontakt</a></li>
-        </ul>
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation" data-i18n-aria="nav.ariaLabel">
+          <ul class="nav-list">
+            <li><a href="arbeitgeber.html" class="nav-link" data-i18n="nav.arbeitgeber">Arbeitgeber</a></li>
+            <li><a href="arbeitnehmer.html" class="nav-link" data-i18n="nav.arbeitnehmer">Arbeitnehmer</a></li>
+            <li><a href="selbstaendige.html" class="nav-link" data-i18n="nav.selbstaendige">Selbständige</a></li>
+            <li><a href="fahrradhaendler.html" class="nav-link" data-i18n="nav.fahrradhaendler">Fahrradhändler</a></li>
+            <li><a href="kontakt.html" class="nav-link" data-i18n="nav.kontakt">Kontakt</a></li>
+          </ul>
       </nav>
 
+      <!-- Right Header Actions: Language & Login -->
       <div class="header-actions">
+        <!-- Language Selector -->
         <div class="lang-selector">
-          <select id="langSelect" aria-label="Sprache wählen">
+          <select id="langSelect" aria-label="Sprache wählen" data-i18n-aria="header.langSelectAria">
             <option value="de">🇩🇪 DE</option>
             <option value="en">🇬🇧 EN</option>
             <option value="es">🇪🇸 ES</option>
           </select>
         </div>
-        <a href="login.html" class="btn-login" aria-label="Login zum Portal">
+
+        <!-- Login Button -->
+        <a href="login.html" class="btn-login" aria-label="Login zum Portal" data-i18n-aria="header.loginAria">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
             <circle cx="12" cy="7" r="4"/>
           </svg>
           <span class="btn-text-full">Login</span>
         </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
-          <span></span><span></span><span></span>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" data-i18n-aria="header.mobileToggleAria" aria-expanded="false" aria-controls="mainNav">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </div>
@@ -59,16 +72,16 @@
   <main>
     <section class="hero-section">
       <div class="container hero-grid">
-        <h1 class="hero-title">Fahrradhändler in deiner Nähe</h1>
-        <p class="hero-subtitle">Gib deine PLZ oder Stadt ein und sieh dir unsere Partner an.</p>
+        <h1 class="hero-title" data-i18n="dealerSearch.title">Fahrradhändler in deiner Nähe</h1>
+        <p class="hero-subtitle" data-i18n="dealerSearch.subtitle">Gib deine PLZ oder Stadt ein und sieh dir unsere Partner an.</p>
       </div>
     </section>
 
     <!-- Simple search form (no backend) -->
     <section class="search-section" style="padding:2rem 0; text-align:center;">
       <form class="partner-search" style="margin-bottom:2rem;">
-        <input type="text" placeholder="PLZ oder Stadt" aria-label="PLZ oder Stadt" style="padding:0.5rem 1rem; width:250px; max-width:80%;">
-        <button type="submit" class="btn-primary" style="margin-left:0.5rem;">Suchen</button>
+        <input type="text" placeholder="PLZ oder Stadt" aria-label="PLZ oder Stadt" style="padding:0.5rem 1rem; width:250px; max-width:80%;" data-i18n-aria="dealerSearch.input" data-i18n-placeholder="dealerSearch.input">
+        <button type="submit" class="btn-primary" style="margin-left:0.5rem;" data-i18n="dealerSearch.button">Suchen</button>
       </form>
     </section>
 
@@ -145,7 +158,7 @@
             <li><a href="impressum.html" data-i18n="footer.link.impressum">Impressum</a></li>
             <li><a href="datenschutz.html" data-i18n="footer.link.datenschutz">Datenschutz</a></li>
             <li><a href="agb.html" data-i18n="footer.link.agb">AGB</a></li>
-            <li><a href="cookies.html">Cookie‑Einstellungen</a></li>
+            <li><a href="cookies.html" data-i18n="footer.link.cookieSettings">Cookie‑Einstellungen</a></li>
           </ul>
         </div>
       </div>
