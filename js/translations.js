@@ -1,5 +1,10 @@
 const translations = {
   de: {
+    "chat.reply.interest": "Vielen Dank für dein Interesse! Ein bike to go Berater wird sich in Kürze bei dir melden.",
+    "chat.reply.thanks": "Danke für deine Nachricht! Unser Team steht dir werktags von 8-18 Uhr zur Verfügung.",
+    "contact.toast.success": "Danke für deine Nachricht! Wir melden uns innerhalb von 24 Stunden.",
+    "login.loggedInAs": "Eingeloggt als {name}",
+    "login.error.passwordMismatch": "Passwörter stimmen nicht überein.",
     "benefits.title": "Bike to Go – Benefits & Leasing‑Pakete",
     "benefits.hero.title": "Mehr als nur ein Fahrrad",
     "benefits.hero.subtitle": "Wähle das passende Leasing‑Paket und profitiere von erstklassigem Service und Zubehör.",
@@ -432,6 +437,11 @@ const translations = {
     "footer.bottom.copy": "© 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.",
   },
   en: {
+    "chat.reply.interest": "Thank you for your interest! A bike to go advisor will contact you shortly.",
+    "chat.reply.thanks": "Thanks for your message! Our team is available on weekdays from 8 am to 6 pm.",
+    "contact.toast.success": "Thanks for your message! We will get back to you within 24 hours.",
+    "login.loggedInAs": "Logged in as {name}",
+    "login.error.passwordMismatch": "Passwords do not match.",
     "benefits.title": "Bike to Go – Benefits & Leasing Packages",
     "benefits.hero.title": "More than just a bike",
     "benefits.hero.subtitle": "Choose the right leasing package and benefit from first-class service and accessories.",
@@ -864,6 +874,11 @@ const translations = {
 
   },
   es: {
+    "chat.reply.interest": "¡Gracias por tu interés! Un asesor de bike to go se pondrá en contacto contigo en breve.",
+    "chat.reply.thanks": "¡Gracias por tu mensaje! Nuestro equipo está disponible de lunes a viernes de 8:00 a 18:00.",
+    "contact.toast.success": "¡Gracias por tu mensaje! Te responderemos en un plazo de 24 horas.",
+    "login.loggedInAs": "Sesión iniciada como {name}",
+    "login.error.passwordMismatch": "Las contraseñas no coinciden.",
     "benefits.title": "Bike to Go – Ventajas y paquetes de leasing",
     "benefits.hero.title": "Más que una simple bicicleta",
     "benefits.hero.subtitle": "Elige el paquete de leasing adecuado y disfruta de un servicio y unos accesorios de primera.",

@@ -6,6 +6,18 @@ import translations from './translations.js';
  * Also updates aria-label, placeholder, and title attributes when
  * data-i18n-aria, data-i18n-placeholder or data-i18n-title are present.
  */
+/**
+ * Translate a key using the active language. Placeholders like {name} are replaced by vars.
+ */
+function t(key, vars = {}) {
+  const lang = window.currentLang || localStorage.getItem('lang') || 'de';
+  const dict = translations[lang] || translations.de || {};
+  let text = dict[key] !== undefined ? dict[key] : (translations.de && translations.de[key]) || key;
+  Object.keys(vars).forEach(k => { text = text.split('{' + k + '}').join(vars[k]); });
+  return text;
+}
+window.t = t;
+
 function applyTranslations(lang) {
   const dict = translations[lang] || {};
   document.documentElement.lang = lang;
@@ -175,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const text = chip.textContent.trim();
         appendChatMessage(text, 'user');
         setTimeout(() => {
-          appendChatMessage('Vielen Dank für dein Interesse! Ein bike to go Berater wird sich in Kürze bei dir melden.', 'bot');
+          appendChatMessage(t('chat.reply.interest'), 'bot');
         }, 600);
       });
     });
@@ -187,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         appendChatMessage(msg, 'user');
         chatInput.value = '';
         setTimeout(() => {
-          appendChatMessage('Danke für deine Nachricht! Unser Team steht dir werktags von 8-18 Uhr zur Verfügung.', 'bot');
+          appendChatMessage(t('chat.reply.thanks'), 'bot');
         }, 800);
       }
     };
@@ -281,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
       breakdownPrice.textContent = getEuroFormatter().format(price);
     }
     if (breakdownTerm) {
-      breakdownTerm.textContent = `${term} Monate`;
+      breakdownTerm.textContent = t('calculator.term.' + term);
     }
   }
 
@@ -375,7 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactForm.reset();
 
       // Show toast notification
-      showToast('✅ Danke für deine Nachricht! Wir melden uns innerhalb von 24 Stunden.');
+      showToast('✅ ' + t('contact.toast.success'));
     });
   }
 
@@ -406,7 +418,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
     }
     const featureName = el.getAttribute('data-placeholder') || 'Diese Funktion';
-    showToast(`ℹ️ ${featureName} wird im nächsten Schritt freigeschaltet.`);
+    showToast('ℹ️ ' + t('toast.default'));
   });
 });
 
@@ -415,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loggedUser = JSON.parse(localStorage.getItem('loggedInUser'));
     if (loginBtn) {
       if (loggedUser && loggedUser.name) {
-        loginBtn.textContent = `Eingeloggt als ${loggedUser.name}`;
+        loginBtn.textContent = t('login.loggedInAs', { name: loggedUser.name });
         loginBtn.removeAttribute('href');
         loginBtn.style.cursor = 'pointer';
         loginBtn.addEventListener('click', (e) => {

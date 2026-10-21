@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const passwordRepeat = document.getElementById('regPasswordRepeat').value;
 
       if (password !== passwordRepeat) {
-        showMessage('Passwörter stimmen nicht überein.', true);
+        showMessage(window.t ? window.t('login.error.passwordMismatch') : 'Passwörter stimmen nicht überein.', true);
         return;
       }
 
