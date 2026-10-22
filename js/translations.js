@@ -1,5 +1,10 @@
 const translations = {
   de: {
+    "chat.chip.1": "🚴‍♀️ Wie funktioniert Fahrradleasing?",
+    "chat.chip.2": "💼 Ich möchte mein Unternehmen anmelden",
+    "chat.chip.3": "📍 Partnerhändler in meiner Nähe",
+    "form.validation.required": "Bitte fülle dieses Feld aus.",
+    "form.validation.email": "Bitte gib eine gültige E-Mail-Adresse ein.",
     "chat.reply.interest": "Vielen Dank für dein Interesse! Ein bike to go Berater wird sich in Kürze bei dir melden.",
     "chat.reply.thanks": "Danke für deine Nachricht! Unser Team steht dir werktags von 8-18 Uhr zur Verfügung.",
     "contact.toast.success": "Danke für deine Nachricht! Wir melden uns innerhalb von 24 Stunden.",
@@ -437,6 +442,11 @@ const translations = {
     "footer.bottom.copy": "© 2026 bike to go GmbH. Alle Rechte vorbehalten. Deutschlandweites Fahrradleasing.",
   },
   en: {
+    "chat.chip.1": "🚴‍♀️ How does bike leasing work?",
+    "chat.chip.2": "💼 I want to register my company",
+    "chat.chip.3": "📍 Partner dealers near me",
+    "form.validation.required": "Please fill out this field.",
+    "form.validation.email": "Please enter a valid email address.",
     "chat.reply.interest": "Thank you for your interest! A bike to go advisor will contact you shortly.",
     "chat.reply.thanks": "Thanks for your message! Our team is available on weekdays from 8 am to 6 pm.",
     "contact.toast.success": "Thanks for your message! We will get back to you within 24 hours.",
@@ -867,13 +877,18 @@ const translations = {
     "chat.quickAction.2": "I want to register my company",
     "chat.quickAction.3": "Partner dealers near me",
     "footer.brand.desc": "Your reliable partner for sustainable, nationwide bike leasing. Better health, less CO₂ and maximum mobility.",
-    "footer.title.targetGroups": "Zielgruppen",
+    "footer.title.targetGroups": "Who it's for",
     "footer.title.services": "Service & Info",
-    "footer.title.legal": "Rechtliches",
+    "footer.title.legal": "Legal",
     "footer.bottom.copy": "© 2026 bike to go GmbH. All rights reserved. Nationwide bike leasing.",
 
   },
   es: {
+    "chat.chip.1": "🚴‍♀️ ¿Cómo funciona el leasing de bicicletas?",
+    "chat.chip.2": "💼 Quiero registrar mi empresa",
+    "chat.chip.3": "📍 Distribuidores asociados cerca de mí",
+    "form.validation.required": "Por favor, rellena este campo.",
+    "form.validation.email": "Introduce una dirección de correo electrónico válida.",
     "chat.reply.interest": "¡Gracias por tu interés! Un asesor de bike to go se pondrá en contacto contigo en breve.",
     "chat.reply.thanks": "¡Gracias por tu mensaje! Nuestro equipo está disponible de lunes a viernes de 8:00 a 18:00.",
     "contact.toast.success": "¡Gracias por tu mensaje! Te responderemos en un plazo de 24 horas.",
@@ -1302,9 +1317,9 @@ const translations = {
     "chat.quickAction.2": "Quiero registrar mi empresa",
     "chat.quickAction.3": "Concesionarios asociados cerca de mí",
     "footer.brand.desc": "Tu socio de confianza para el leasing de bicicletas sostenible en toda Alemania. Más salud, menos CO₂ y máxima movilidad.",
-    "footer.title.targetGroups": "Zielgruppen",
+    "footer.title.targetGroups": "Para quién",
     "footer.title.services": "Servicio e información",
-    "footer.title.legal": "Rechtliches",
+    "footer.title.legal": "Información legal",
     "footer.bottom.copy": "© 2026 bike to go GmbH. Todos los derechos reservados. Leasing de bicicletas en toda Alemania.",
   }
 };

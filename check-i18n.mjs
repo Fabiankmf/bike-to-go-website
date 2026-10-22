@@ -19,7 +19,7 @@ for (const l of langs) {
   miss.forEach(k => console.log('  ' + k));
 }
 for (const l of ['en', 'es']) {
-  const same = Object.keys(L.de).filter(k => L[l][k] === L.de[k] && String(L.de[k]).length > 12);
+  const same = Object.keys(L.de).filter(k => L[l][k] === L.de[k] && String(L.de[k]).length > 3);
   console.log('\n[' + l + '] identisch mit Deutsch (' + same.length + '):');
   same.forEach(k => console.log('  ' + k + ' → ' + String(L.de[k]).slice(0, 60)));
 }

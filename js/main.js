@@ -18,6 +18,18 @@ function t(key, vars = {}) {
 }
 window.t = t;
 
+// Localized form validation messages (the browser default follows the browser language, not the site language)
+document.addEventListener('invalid', (e) => {
+  const el = e.target;
+  if (!el || typeof el.setCustomValidity !== 'function') return;
+  el.setCustomValidity('');
+  if (el.validity.valueMissing) el.setCustomValidity(t('form.validation.required'));
+  else if (el.validity.typeMismatch && el.type === 'email') el.setCustomValidity(t('form.validation.email'));
+}, true);
+document.addEventListener('input', (e) => {
+  if (e.target && typeof e.target.setCustomValidity === 'function') e.target.setCustomValidity('');
+}, true);
+
 function applyTranslations(lang) {
   const dict = translations[lang] || {};
   document.documentElement.lang = lang;
